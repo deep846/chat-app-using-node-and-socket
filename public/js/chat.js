@@ -39,6 +39,14 @@ const autoscroll = () => {
   }
 };
 
+const setHeight = ()=>{
+  const currentHeight = window.innerHeight;
+  document.body.style.height = `${currentHeight}px`
+}
+
+window.addEventListener("resize", setHeight);
+setHeight()
+
 socket.on("sent", (message) => {
   const html = Mustache.render(messageTemplate, {
     message: message.text,

@@ -8,8 +8,8 @@
 
 html {
     font-size: 16px;
-    /* height: -webkit-fill-available; */
-    height: 100%
+    height: -webkit-fill-available !important;
+    /* height: 100% */
 }
 
 input {
@@ -20,7 +20,7 @@ body {
     line-height: 1.4;
     color: #333333;
     font-family: Helvetica, Arial, sans-serif;
-    /* height: -webkit-fill-available; */
+    height: -webkit-fill-available !important;
     height: 100%
 }
 
@@ -65,7 +65,7 @@ button:disabled {
 .centered-form {
     background: #333744;
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
