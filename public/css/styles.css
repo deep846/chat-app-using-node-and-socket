@@ -105,7 +105,7 @@ button:disabled {
     .chat__sidebar {
         z-index: 10000;
         /* display: none; */
-        width: 255px !important;
+        width: 2px !important;
     }
 }
 
@@ -177,9 +177,9 @@ button:disabled {
     .compose input {
         margin-bottom: 5px;
     }
-        #location-btn{
+    #location-btn{
             display: none !important;
-        }
+    }
 }
 
 
