@@ -8,6 +8,7 @@
 
 html {
     font-size: 16px;
+    height: -webkit-fill-available;
 }
 
 input {
@@ -18,6 +19,7 @@ body {
     line-height: 1.4;
     color: #333333;
     font-family: Helvetica, Arial, sans-serif;
+    height: -webkit-fill-available;
 }
 
 h1 {
@@ -61,7 +63,7 @@ button:disabled {
 .centered-form {
     background: #333744;
     width: 100vw;
-    height: 100vh;   
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,8 +105,8 @@ button:disabled {
     .chat__sidebar {
         z-index: 10000;
         /* display: none; */
-        width: 150px !important;
-        }
+        width: 255px !important;
+    }
 }
 
 /* Chat styles */
@@ -125,7 +127,7 @@ button:disabled {
 /* Message Styles */
 
 .message {
-    margin-bottom: 16px;   
+    margin-bottom: 16px;
 }
 
 .message__name {
@@ -158,7 +160,7 @@ button:disabled {
     margin-right: 16px;
 }
 
-.dngbtn{
+.dngbtn {
     display: flex;
     flex-direction: row;
 }
@@ -166,14 +168,18 @@ button:disabled {
 @media screen and (max-width: 768px) {
 
     .compose form {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            margin-right: 16px;
-        }
-    .compose input {
-            margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin-right: 16px;
     }
+
+    .compose input {
+        margin-bottom: 5px;
+    }
+        #location-btn{
+            display: none !important;
+        }
 }
 
 
@@ -195,12 +201,13 @@ button:disabled {
 @media screen and (max-width: 768px) {
 
     .dngbtn {
-           flex-direction: column-reverse;
-           flex-wrap: wrap;
-        }
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
     .compose button {
-             margin: 2px;
-        }
+        margin: 2px;
+    }
 }
 
 
@@ -210,7 +217,7 @@ button:disabled {
     font-weight: 400;
     font-size: 22px;
     background: #2c2f3a;
-    padding: 24px;   
+    padding: 24px;
 }
 
 .list-title {
